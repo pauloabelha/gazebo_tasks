@@ -7,11 +7,11 @@ This was only tested on Ubuntu 14.04, but should work in other versions.
 I suggest you follow these installation steps for Gazbeo in order to run the rest of my code that connects to Gazebo.
 
 1) Set up Gazebo
-  1.1) Follow: http://gazebosim.org/tutorials?tut=install_ubuntu
-  1.2) Gazebo will create a hidden folder ~/.gazebo in your home
-  1.3) Create a new directory called 'gazebo_models':
+  - 1.1) Follow: http://gazebosim.org/tutorials?tut=install_ubuntu
+  - 1.2) Gazebo will create a hidden folder ~/.gazebo in your home
+  - 1.3) Create a new directory called 'gazebo_models':
     mkdir ~/.gazebo/gazebo_models
-  1.4) Run Gazebo to check everything is okay:
+  - 1.4) Run Gazebo to check everything is okay:
     gazebo
     (this should open gazebo an empty world)
   
