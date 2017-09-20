@@ -1,6 +1,8 @@
 # gazebo_tasks
 Gazebo simulation of everyday tasks
+
 By Paulo Abelha
+
 E-mail: p.abelha@abdn.ac.uk
 
 If using this repository in your own research, please e-mail me to cite my work (the paper to cite is yet to be published).
