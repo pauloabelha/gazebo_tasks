@@ -1,0 +1,102 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="lifting">
+
+	<physics type="ode">
+		<real_time_update_rate>1000</real_time_update_rate>
+	</physics>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://boxBack</uri>
+    </include>
+
+    <include>
+      <uri>model://tool_lifting_pancake</uri>
+    </include>
+	
+    <include>
+      <uri>model://boxBellow</uri>
+    </include>
+	
+	<include>
+      <uri>model://boxLeft</uri>
+    </include>
+	
+	<include>
+      <uri>model://boxRight</uri>
+    </include>
+
+<!--
+	<include>
+      <uri>model://pancake</uri>
+    </include>
+
+	<include>
+      <uri>model://pancake_left</uri>
+    </include>
+
+	<include>
+      <uri>model://pancake_right</uri>
+    </include> -->
+
+
+	<plugin name="factory_pancake" filename="libfactory_pancake.so">
+		<x>0.4</x>
+		<y>0</y>
+		<z>0.115</z>
+
+		<pancake_radius>0.04</pancake_radius>
+		<sphere_radius>0.0100</sphere_radius>
+
+		<inertia>0.00002</inertia>
+		<mass>0.03</mass> 
+		<mu>1</mu>     
+		<mu2>1</mu2>
+
+		<c_cfm>1000</c_cfm>     
+		<c_erp>0</c_erp>
+		<kp>1000</kp>     
+		<kd>1000</kd>
+
+		<j_cfm>1</j_cfm>  
+		<limit_cfm>2</limit_cfm>
+		<limit_erp>1</limit_erp>
+	</plugin> 
+	
+	<!--
+    <plugin name="factory_pancake" filename="libfactory_pancake.so">
+      <x>0.39</x>
+      <y>0</y>
+      <z>0.115</z>
+      
+      <pancake_radius>0.04</pancake_radius>
+      <sphere_radius>0.01</sphere_radius>
+
+      <inertia>0.00002</inertia>
+      <mass>0.01</mass> 
+      <mu>100</mu>     
+      <mu2>100</mu2>
+
+      <c_cfm>20</c_cfm>     
+      <c_erp>0</c_erp>
+      <kp>100000.0</kp>     
+      <kd>100000.0</kd>
+      
+      <j_cfm>2</j_cfm>  
+      <limit_cfm>2</limit_cfm>
+      <limit_erp>0</limit_erp>
+    </plugin> 
+    -->
+
+    <plugin name="measure_pancake_particles" filename="libmeasure_pancake_particles.so"/>
+
+  </world>
+</sdf>

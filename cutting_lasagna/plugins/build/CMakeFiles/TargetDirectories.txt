@@ -1,0 +1,6 @@
+/home/paulo/.gazebo/gazebo_models/cutting_lasagna/plugins/build/CMakeFiles/cut.dir
+/home/paulo/.gazebo/gazebo_models/cutting_lasagna/plugins/build/CMakeFiles/factory_lasagna.dir
+/home/paulo/.gazebo/gazebo_models/cutting_lasagna/plugins/build/CMakeFiles/lasagna_collision.dir
+/home/paulo/.gazebo/gazebo_models/cutting_lasagna/plugins/build/msgs/CMakeFiles/lasagna_sensor_msgs.dir
+/home/paulo/.gazebo/gazebo_models/cutting_lasagna/plugins/build/msgs/CMakeFiles/measure_cut_msgs.dir
+/home/paulo/.gazebo/gazebo_models/cutting_lasagna/plugins/build/CMakeFiles/measurer.dir

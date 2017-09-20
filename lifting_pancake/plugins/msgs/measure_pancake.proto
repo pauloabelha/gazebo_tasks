@@ -1,0 +1,11 @@
+package measure_pancake_msgs.msgs;
+
+
+message MeasurePancake
+{
+
+    required bool stopped = 1;
+    required bool stuck = 2;
+    required float lift_height = 3;
+  
+}

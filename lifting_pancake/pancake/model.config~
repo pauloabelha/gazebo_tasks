@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<model>
+  <name>BoxBellow</name>
+  <version>1.0</version>
+  <sdf version='1.6'>pancake.sdf</sdf>
+
+  <author>
+   <name>Paulo Abelha</name>
+   <email>p.abelha@abdn.ac.uk</email>
+  </author>
+
+  <description>
+    Superquadric Pancake
+  </description>
+</model>

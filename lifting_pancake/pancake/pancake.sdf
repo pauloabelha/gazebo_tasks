@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+<model name="pancake">
+<static>false</static>
+<pose> 0 0 0 0 0 0 </pose>
+
+<link name='tool'>
+	<pose>0.43 0 0.1 0 0 0</pose>
+	<inertial>
+		<mass>0.5</mass>
+	</inertial>
+	<collision name='pancake_collision'>
+		<geometry>
+			<mesh><uri>model://pancake/pancake.dae</uri></mesh>			
+		</geometry>
+	</collision>
+	<visual name='tool_visual'>
+		<geometry>
+			<mesh><uri>model://pancake/pancake.dae</uri></mesh>
+		</geometry>
+	</visual>
+<!--
+	<sensor name='pancake_contact' type='contact'>
+		<plugin filename="libpancake_collision.so" name="pancake_collision" />
+		<contact>
+			<collision>pancake_collision</collision>
+		</contact>
+	</sensor>
+-->
+</link>
+
+
+</model>
+</sdf>

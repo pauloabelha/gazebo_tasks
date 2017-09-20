@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<model>
+  <name>BoxBellow</name>
+  <version>1.0</version>
+  <sdf version='1.6'>boxBellow.sdf</sdf>
+
+  <author>
+   <name>Krasimir Georgiev</name>
+   <email>kgeorgiev1993@gmail.com</email>
+  </author>
+
+  <description>
+    Box.
+  </description>
+</model>

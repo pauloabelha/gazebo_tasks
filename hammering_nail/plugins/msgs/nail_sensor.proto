@@ -1,0 +1,9 @@
+package nail_sensor_msgs.msgs;
+
+
+message NailCollision
+{
+
+    required bool collision = 1;
+  
+}

@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name="boxPancake">
+    <link name="boxPancake">
+      <pose>0.4 0 0.15 0 0 0</pose>
+      <inertial>
+        <mass>0.1</mass>
+      </inertial>
+      <collision name="box_collision">
+        <geometry>
+          <box>
+              <size>.05 .05 .05</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="box_visual">
+        <geometry>
+          <box>
+              <size>.05 .05 .05</size>
+          </box>
+        </geometry>
+		<material>
+		    <script>
+		      <uri>file://media/materials/scripts/gazebo.material</uri>
+		      <name>Gazebo/Yellow</name>
+		    </script>
+      	</material>
+      </visual>
+    </link>
+  </model>
+</sdf>
+

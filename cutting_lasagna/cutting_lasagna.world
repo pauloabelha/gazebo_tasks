@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="cutting_lasagna">
+	
+	<!--
+	<physics type="ode">
+		<real_time_update_rate>10000</real_time_update_rate>
+	</physics> -->
+	
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+
+    <include>
+      <uri>model://tool_cutting_lasagna</uri>
+    </include> 
+
+	<include>
+      <uri>model://cafe_table</uri>
+    </include>    
+
+
+	<plugin name="factory_lasagna" filename="libfactory_lasagna.so">
+		<prob_colour_red>0.4</prob_colour_red>
+		<rows>10</rows>
+		<cols>10</cols>
+		<x>0.75</x>
+		<y>0</y>
+		<z>0.785</z>	
+		
+		<radius>0.01</radius>
+		<mass>0.01</mass>
+		<mu>.1</mu>
+		<mu2>.1</mu2>
+		<soft_cfm>0</soft_cfm>
+		<soft_erp>0</soft_erp>
+		
+		<joint_damping>10</joint_damping>
+		<joint_friction>5</joint_friction>
+	</plugin>
+	
+	<plugin name="measurer" filename="libmeasurer.so"/>
+
+  </world>
+</sdf>

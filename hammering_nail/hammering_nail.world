@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <world name="Hammering">
+	<!--
+    <physics type="ode">
+	<real_time_update_rate>2000</real_time_update_rate>
+    </physics>
+	-->
+
+    <include>
+		<uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+		<uri>model://sun</uri>
+    </include>
+
+    <include>
+		<uri>model://cafe_table</uri>
+    </include>
+
+    <include>
+		<uri>model://tool_hammering_nail</uri>
+    </include>
+
+	<include>
+		<uri>model://nail</uri>
+    </include>
+
+    <plugin filename="libmeasure_nail_distance.so" name="measure_nail_distance" />
+    
+  </world>
+</sdf>

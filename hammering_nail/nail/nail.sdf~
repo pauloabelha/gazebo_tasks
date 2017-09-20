@@ -1,0 +1,237 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+
+    <model name="nail">
+				<pose> 0 0 0.775 0 0 0 </pose>
+
+<!-- nail -->
+
+        <link name='nail'>
+          <pose>0.325 0 0.06 0 0 0</pose>
+            <inertial>
+              <mass>0.01</mass>    
+            </inertial>
+            <collision name='nail_collision'>
+              <geometry>
+                <box>
+                  <size>.0125 .0125 .02</size>
+                </box>
+              </geometry>
+              <surface>
+                <friction>
+                  <ode>
+                    <mu>0.5</mu>
+                    <mu2>0.5</mu2>
+                  </ode>
+                </friction>
+              </surface>
+            </collision>
+            <visual name='nail_visual'>
+              <geometry>
+                <box>
+                  <size>.0125 .0125 .02</size>
+                </box>
+              </geometry>
+            </visual>
+        </link>
+
+
+<!-- wooden piece -->
+				
+				<model name='wooden_piece'>
+				<static>true</static>
+
+        <link name='bigbox1'>
+          <pose>0.3125 0 0.025 0 0 0</pose>
+
+            <collision name='bigbox1_collision'>
+              <geometry>
+                <box>
+                  <size>.0125 .0375 .05</size>
+                </box>
+              </geometry>
+              <surface>
+                <friction>
+                  <ode>
+                    <mu>2000</mu>
+                    <mu2>2000</mu2>
+                  </ode>
+                </friction>
+              </surface>
+            </collision>
+
+            <visual name='bigbox1_visual'>
+              <geometry>
+                <box>
+                  <size>.0125 .0375 .05</size>
+                </box>
+              </geometry>
+              <material>
+                <script>
+                  <uri>file://media/materials/scripts/gazebo.material</uri>
+                  <name>Gazebo/WoodFloor</name>
+                </script>
+              </material>
+            </visual>
+        </link>
+
+        <link name='bigbox2'>
+          <pose>0.3375 0 0.025 0 0 0</pose>
+
+            <collision name='bigbox2_collision'>
+              <geometry>
+                <box>
+                  <size>.0125 .0375 .05</size>
+                </box>
+              </geometry>
+              <surface>
+                <friction>
+                  <ode>
+                    <mu>2000</mu>
+                    <mu2>2000</mu2>
+                  </ode>
+                </friction>
+              </surface>
+            </collision>
+
+            <visual name='bigbox2_visual'>
+              <geometry>
+                <box>
+                  <size>.0125 .0375 .05</size>
+                </box>
+              </geometry>
+              <material>
+                <script>
+                  <uri>file://media/materials/scripts/gazebo.material</uri>
+                  <name>Gazebo/WoodFloor</name>
+                </script>
+              </material>
+            </visual>
+        </link>
+	<!--
+        <link name='smallbox1'>
+          <pose>0.325 -0.0125 0.025 0 0 0</pose>
+
+            <collision name='smallbox1_collision'>
+              <geometry>
+                <box>
+                  <size>.0125 .0125 .05</size>
+                </box>
+              </geometry>
+              <surface>
+                <friction>
+                  <ode>
+                    <mu>2000</mu>
+                    <mu2>2000</mu2>
+                  </ode>
+                </friction>
+              </surface>
+            </collision>
+
+            <visual name='smallbox1_visual'>
+              <geometry>
+                <box>
+                  <size>.0125 .0125 .05</size>
+                </box>
+              </geometry>
+              <material>
+                <script>
+                  <uri>file://media/materials/scripts/gazebo.material</uri>
+                  <name>Gazebo/WoodFloor</name>
+                </script>
+              </material>
+            </visual>
+        </link>-->
+	
+        <link name='smallbox2'>
+          <pose>0.325 0.0125 0.025 0 0 0</pose>
+
+            <collision name='smallbox2_collision'>
+              <geometry>
+                <box>
+                  <size>.0125 .0125 .05</size>
+                </box>
+              </geometry>
+              <surface>
+                <friction>
+                  <ode>
+                    <mu>2000</mu>
+                    <mu2>2000</mu2>
+                  </ode>
+                </friction>
+              </surface>
+            </collision>
+
+            <visual name='smallbox2_visual'>
+              <geometry>
+                <box>
+                  <size>.0125 .0125 .05</size>
+                </box>
+              </geometry>
+              <material>
+                <script>
+                  <uri>file://media/materials/scripts/gazebo.material</uri>
+                  <name>Gazebo/WoodFloor</name>
+                </script>
+              </material>
+            </visual>
+        </link>
+				</model>
+
+
+<!-- Joints -->
+
+        <joint name="nail_big1_joint" type="prismatic">
+          <pose>0 0 0.03 0 0 0</pose>
+          <parent>nail</parent>
+          <child>bigbox1</child>
+          <axis>
+            <xyz>0 0 1</xyz>
+            <dynamics>
+              <damping>10</damping>
+              <friction>300</friction>
+            </dynamics>
+          </axis>
+        </joint>
+
+        <joint name="nail_big2_joint" type="prismatic">
+          <pose>0 0 0.03 0 0 0</pose>
+          <parent>nail</parent>
+          <child>bigbox2</child>
+          <axis>
+            <xyz>0 0 1</xyz>
+            <dynamics>
+              <damping>10</damping>
+              <friction>300</friction>
+            </dynamics>
+          </axis>
+        </joint>
+
+        <joint name="nail_small1_joint" type="prismatic">
+          <pose>0 0 0.03 0 0 0</pose>
+          <parent>nail</parent>
+          <child>smallbox1</child>
+          <axis>
+            <xyz>0 0 1</xyz>
+            <dynamics>
+              <damping>10</damping>
+              <friction>300</friction>
+            </dynamics>
+          </axis>
+        </joint>
+
+        <joint name="nail_small2_joint" type="prismatic">
+          <pose>0 0 0.03 0 0 0</pose>
+          <parent>nail</parent>
+          <child>smallbox2</child>
+          <axis>
+            <xyz>0 0 1</xyz>
+            <dynamics>
+              <damping>10</damping>
+              <friction>300</friction>
+            </dynamics>
+          </axis>
+        </joint>    
+
+    </model>
+</sdf>

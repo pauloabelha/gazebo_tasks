@@ -1,0 +1,9 @@
+package nail_distance_msgs.msgs;
+
+
+message NailDistance
+{
+
+    required bool distance = 1;
+  
+}

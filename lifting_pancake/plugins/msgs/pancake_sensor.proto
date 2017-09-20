@@ -1,0 +1,10 @@
+package pancake_sensor_msgs.msgs;
+
+
+message PancakeCollision
+{
+
+    required bool collision = 1;
+	//required bool front_collision = 2;
+
+}

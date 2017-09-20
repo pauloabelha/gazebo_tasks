@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+80f4f2ab82f0e81da0e627595bd4c1f1 msgs/check_time.pb.cc
+9a90ec0316761b9bbde45e3b155c0387 msgs/nail_distance.pb.cc
+072efc32a7f776c88c83d7dcd092a0e7 msgs/nail_sensor.pb.cc

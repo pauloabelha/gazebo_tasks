@@ -1,0 +1,7 @@
+package measure_scoop_msgs.msgs;
+
+
+message MeasureCut
+{
+	required bool cut = 1;
+}

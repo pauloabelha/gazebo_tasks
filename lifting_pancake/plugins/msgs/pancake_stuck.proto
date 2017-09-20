@@ -1,0 +1,9 @@
+package pancake_stuck_msgs.msgs;
+
+
+message PancakeStuck
+{
+
+    required bool stuck = 1;
+
+}

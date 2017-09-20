@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name="boxBack">
+    <link name="boxBack">
+      <pose>0.5 0 0.075 0 0 0</pose>
+      <inertial>
+        <mass>10000</mass>
+      </inertial>
+      <collision name="box_collision">
+        <geometry>
+          <box>
+              <size>.1 .21 .15</size>
+            </box>
+		<surface>
+                <friction>
+                  <ode>
+                    <mu>1000</mu>
+                    <mu2>1000</mu2>
+                  </ode>
+                </friction>
+              </surface>
+        </geometry>
+      </collision>
+      <visual name="box_visual">
+        <geometry>
+          <box>
+              <size>.1 .21 .15</size>
+            </box>
+        </geometry>
+		<material>
+		    <script>
+		      <uri>file://media/materials/scripts/gazebo.material</uri>
+		      <name>Gazebo/Black</name>
+		    </script>
+      	</material>
+      </visual>
+    </link>
+  </model>
+</sdf>

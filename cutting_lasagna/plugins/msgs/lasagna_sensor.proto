@@ -1,0 +1,9 @@
+package lasagna_sensor_msgs.msgs;
+
+
+message LasagnaCollision
+{
+
+    required bool collision = 1;
+
+}

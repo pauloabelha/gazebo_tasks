@@ -1,0 +1,6 @@
+/home/paulo/.gazebo/gazebo_models/hammering_nail/plugins/build/msgs/CMakeFiles/check_time_msgs.dir
+/home/paulo/.gazebo/gazebo_models/hammering_nail/plugins/build/CMakeFiles/hammer.dir
+/home/paulo/.gazebo/gazebo_models/hammering_nail/plugins/build/CMakeFiles/measure_nail_distance.dir
+/home/paulo/.gazebo/gazebo_models/hammering_nail/plugins/build/CMakeFiles/nail_collision.dir
+/home/paulo/.gazebo/gazebo_models/hammering_nail/plugins/build/msgs/CMakeFiles/nail_distance_msgs.dir
+/home/paulo/.gazebo/gazebo_models/hammering_nail/plugins/build/msgs/CMakeFiles/nail_sensor_msgs.dir

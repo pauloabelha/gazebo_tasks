@@ -1,0 +1,9 @@
+package time_msgs.msgs;
+
+
+message CheckTime
+{
+
+    required bool aux = 1;
+  
+}
