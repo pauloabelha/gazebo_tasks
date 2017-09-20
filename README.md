@@ -24,17 +24,17 @@ I suggest you follow these installation steps for Gazbeo in order to run the res
   - 2.3) For every task you will need to add its model and code path, spearating with ':'
     `xport GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:~/.gazebo/gazebo_models/TASK_NAME/plugins/build::~/.gazebo/gazebo_models/TASK_NAME2/plugins/build`
     export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:~/.gazebo/gazebo_models/TASK_NAME:~/.gazebo/gazebo_models/TASK_NAME2
-  2.4) Copy the task folder from this repository for TASK_NAME to the gazebo_models folder
+  - 2.4) Copy the task folder from this repository for TASK_NAME to the gazebo_models folder
     `cp -r ~/gazebo_tasks/TASK_NAME ~/.gazebo/gazebo_models/TASK_NAME`
-  2.5) Remove the build directory inside the task folder
+  - 2.5) Remove the build directory inside the task folder
     `rm -r ~/.gazebo/gazebo_models/TASK_NAME/plugins/build`
-  2.6) Create a new build directory inside the task folder
+  - 2.6) Create a new build directory inside the task folder
     `mkdir ~/.gazebo/gazebo_models/TASK_NAME/plugins/build`
-  2.7) Go inside the build folder
+  - 2.7) Go inside the build folder
     `cd ~/.gazebo/gazebo_models/TASK_NAME/plugins/build`
-  2.8) Build the task code and create make files
+  - 2.8) Build the task code and create make files
     `cmake ..`
-  2.9) Compile the task code
+  - 2.9) Compile the task code
     `make`
 
 3) Run a simulation
