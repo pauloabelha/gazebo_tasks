@@ -1,6 +1,8 @@
 # gazebo_tasks
 Gazebo simulation of everyday tasks
 
+If using this repository in your own research, please e-mail me to cite my work (the paper to cite is yet to be published).
+
 This repository is part of my PhD. It contains the code and files for simulating 5 everyday tasks in Gazebo.
 This was only tested on Ubuntu 14.04, but should work in other versions.
 
