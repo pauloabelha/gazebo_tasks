@@ -30,7 +30,7 @@
 	
 	
 	<plugin name="factory_grains" filename="libfactory_grains.so">
-		<n_grains_x>6</n_grains_x>
+		<n_grains_x>5</n_grains_x>
 		<n_grains_y>7</n_grains_y>
 		<n_grains_z>5</n_grains_z>
 		<grain_radius>0.0145</grain_radius>
