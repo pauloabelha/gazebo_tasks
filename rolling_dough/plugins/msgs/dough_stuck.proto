@@ -1,0 +1,9 @@
+package dough_stuck_msgs.msgs;
+
+
+message DoughStuck
+{
+
+    required bool stuck = 1;
+
+}

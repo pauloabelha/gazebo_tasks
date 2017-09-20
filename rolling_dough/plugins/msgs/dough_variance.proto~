@@ -1,0 +1,10 @@
+package dough_variance_msgs.msgs;
+
+
+message DoughVariance
+{
+    
+    required bool variance = 1;
+    required float table_height = 2;
+
+}

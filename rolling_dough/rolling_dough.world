@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="rolling">
+<!--
+	<physics type="ode">
+		<real_time_update_rate>2000</real_time_update_rate>
+	</physics> -->
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://tool_rolling_dough</uri>
+    </include>
+
+
+    <include>
+      <uri>model://cafe_table</uri>
+    </include>
+
+    <!--	
+    <include>
+      <uri>model://end_box</uri>
+    </include>
+    -->     
+    
+      <plugin name="measure_dough_variance" filename="libmeasure_dough_variance.so"/>
+      <plugin name="factory_dough" filename="libfactory_dough.so">
+
+      <rows>10</rows>
+      <cols>10</cols>
+      <x>0.7</x>
+      <y>0</y>
+      <z>0.78</z>
+	
+      <dough_min_height>0.005</dough_min_height>
+      <dough_max_height>0.015</dough_max_height>
+      
+      <dough_elem_width>0.015</dough_elem_width>
+      <dough_elem_thickness>0.01</dough_elem_thickness>
+
+      <dough_mass>0.01</dough_mass>
+      <dough_mu>20</dough_mu>
+      <dough_mu2>20</dough_mu2>
+
+      <box_mass>1000</box_mass>
+      <box_mu>20</box_mu>
+      <box_mu2>20</box_mu2>
+
+      <damping>1</damping>
+      <friction>5</friction>
+
+      </plugin>
+
+  </world>
+</sdf>

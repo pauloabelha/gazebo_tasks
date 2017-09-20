@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+<model name="rollingpin">
+<static>false</static>
+<pose> 0 0 0 0 0 0 </pose>
+
+<link name='tool'>
+	<pose>0.5 -0.15 0.82 0 0 0</pose>
+	<inertial>
+		<pose>-0.0000 0.0074 0.0003 0 0 0</pose>
+		<mass>0.2759</mass>
+	</inertial>
+	<collision name='tool_collision'>
+		<geometry>
+			<mesh><uri>model://tool_rolling_dough/tool.dae</uri></mesh>
+		</geometry>
+	</collision>
+	<visual name='tool_visual'>
+		<geometry>
+			<mesh><uri>model://tool_rolling_dough/tool.dae</uri></mesh>
+		</geometry>
+	</visual>
+	<sensor name='tool_contact' type='contact'>
+		<plugin filename="libdough_collision.so" name="dough_collision" />
+		<contact>
+			<collision>tool_collision</collision>
+		</contact>
+	</sensor>
+</link>
+
+	<plugin filename="libroll.so" name="roll"/>
+
+</model>
+</sdf>

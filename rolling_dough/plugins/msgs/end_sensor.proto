@@ -1,0 +1,10 @@
+package end_sensor_msgs.msgs;
+
+
+message EndCollision
+{
+
+    required bool end_collision = 1;
+    required float table_height = 2;	
+  
+}

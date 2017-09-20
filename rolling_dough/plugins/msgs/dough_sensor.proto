@@ -1,0 +1,9 @@
+package dough_sensor_msgs.msgs;
+
+
+message DoughCollision
+{
+
+    required bool collision = 1;
+  
+}
