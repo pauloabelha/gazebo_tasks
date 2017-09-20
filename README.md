@@ -41,12 +41,13 @@ I suggest you follow these installation steps for Gazbeo in order to run the res
 
 3) Run a simulation
   - 3.1) Go to the task folder
-    cd ~/.gazebo/gazebo_models/TASK_NAME
+    `cd ~/.gazebo/gazebo_models/TASK_NAME`
   - 3.2) Run the simulation for the demo tool that goes with the repository
-    gazebo -u TASK_NAME.world --verbose
-    (-u will make Gazebo start paused)
-    (-verbose is nice to show you any problems with finding paths, installation etc.)
-  - 3.3) Check the ~/.gazebo/gazebo_models/TASK_NAME/TASK_NAME.world file to see parameters and models loaded
+    `gazebo -u TASK_NAME.world --verbose`
+    - (-u will make Gazebo start paused)
+    - (-verbose is nice to show you any problems with finding paths, installation etc.)
+  - 3.3) Check the file to see parameters and models loaded
+    - `gedit ~/.gazebo/gazebo_models/TASK_NAME/TASK_NAME.world &`
   
  Good simulating! :) 
  
