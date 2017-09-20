@@ -1,10 +1,10 @@
 # gazebo_tasks
 Gazebo simulation of everyday tasks
 
-This repository is part of my PhD. It contains the code anf files for simulating 5 everyday tasks in Gazebo.
+This repository is part of my PhD. It contains the code and files for simulating 5 everyday tasks in Gazebo.
 This was only tested on Ubuntu 14.04, but should work in other versions.
 
-I suggest you follow these installation steps for Gazbeo in order to run the rest of my code that connects to Gazebo.
+I suggest you follow these installation steps for Gazebo in order to run the rest of my code that connects to Gazebo.
 
 1) Set up Gazebo
   - 1.1) Follow: http://gazebosim.org/tutorials?tut=install_ubuntu
