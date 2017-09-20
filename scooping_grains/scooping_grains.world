@@ -29,7 +29,7 @@
 	
 	
 	
-	<plugin name="factory_grain" filename="libfactory_grain.so">
+	<plugin name="factory_grains" filename="libfactory_grains.so">
 		<n_grains_x>6</n_grains_x>
 		<n_grains_y>7</n_grains_y>
 		<n_grains_z>5</n_grains_z>
@@ -42,7 +42,7 @@
 		<mu2>.1</mu2>
 	</plugin>
 	
-	<plugin name="measurer_cutting_lasagna" filename="libmeasurer_cutting_lasagna.so"/>
+	<plugin name="measurer_scooping_grains" filename="libmeasurer_scooping_grains.so"/>
 
   </world>
 </sdf>

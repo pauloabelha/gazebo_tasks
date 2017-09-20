@@ -1,6 +1,0 @@
-/home/paulo/.gazebo/gazebo_models/scooping_grains/plugins/build/CMakeFiles/factory_grain.dir
-/home/paulo/.gazebo/gazebo_models/scooping_grains/plugins/build/CMakeFiles/grain_collision.dir
-/home/paulo/.gazebo/gazebo_models/scooping_grains/plugins/build/msgs/CMakeFiles/grain_sensor_msgs.dir
-/home/paulo/.gazebo/gazebo_models/scooping_grains/plugins/build/msgs/CMakeFiles/measure_scoop_msgs.dir
-/home/paulo/.gazebo/gazebo_models/scooping_grains/plugins/build/CMakeFiles/measurer_cutting_lasagna.dir
-/home/paulo/.gazebo/gazebo_models/scooping_grains/plugins/build/CMakeFiles/scoop.dir

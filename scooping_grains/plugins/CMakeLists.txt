@@ -31,11 +31,11 @@ add_library(scoop SHARED scoop.cc)
 target_link_libraries(scoop grain_sensor_msgs measure_scoop_msgs ${Boost_LIBRARIES} ${GAZEBO_LIBRARIES} ${SDF_LIBRARIES})
 add_dependencies(scoop grain_sensor_msgs measure_scoop_msgs)
 
-add_library(measurer_cutting_lasagna SHARED measurer_cutting_lasagna.cc)
-target_link_libraries(measurer_cutting_lasagna measure_scoop_msgs ${Boost_LIBRARIES} ${GAZEBO_LIBRARIES} ${SDF_LIBRARIES})
-add_dependencies(measurer_cutting_lasagna measure_pancake_msgs measure_scoop_msgs)
+add_library(measurer_scooping_grains SHARED measurer_scooping_grains.cc)
+target_link_libraries(measurer_scooping_grains measure_scoop_msgs ${Boost_LIBRARIES} ${GAZEBO_LIBRARIES} ${SDF_LIBRARIES})
+add_dependencies(measurer_scooping_grains measure_scoop_msgs measure_scoop_msgs)
 
-add_library(factory_grain SHARED factory_grain.cc)
-target_link_libraries(factory_grain ${GAZEBO_LIBRARIES} ${Boost_LIBRARIES})
+add_library(factory_grains SHARED factory_grains.cc)
+target_link_libraries(factory_grains ${GAZEBO_LIBRARIES} ${Boost_LIBRARIES})
 
 
