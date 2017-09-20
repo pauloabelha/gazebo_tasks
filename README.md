@@ -22,7 +22,7 @@ I suggest you follow these installation steps for Gazbeo in order to run the res
     export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:~/.gazebo/gazebo_models/TASK_NAME/plugins/build
     export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:~/.gazebo/gazebo_models/TASK_NAME
   - 2.3) For every task you will need to add its model and code path, spearating with ':'
-    `xport GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:~/.gazebo/gazebo_models/TASK_NAME/plugins/build::~/.gazebo/gazebo_models/TASK_NAME2/plugins/build`
+    export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:~/.gazebo/gazebo_models/TASK_NAME/plugins/build::~/.gazebo/gazebo_models/TASK_NAME2/plugins/build
     export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:~/.gazebo/gazebo_models/TASK_NAME:~/.gazebo/gazebo_models/TASK_NAME2
   - 2.4) Copy the task folder from this repository for TASK_NAME to the gazebo_models folder
     `cp -r ~/gazebo_tasks/TASK_NAME ~/.gazebo/gazebo_models/TASK_NAME`
@@ -38,13 +38,13 @@ I suggest you follow these installation steps for Gazbeo in order to run the res
     `make`
 
 3) Run a simulation
-  3.1) Go to the task folder
+  - 3.1) Go to the task folder
     cd ~/.gazebo/gazebo_models/TASK_NAME
-  3.2) Run the simulation for the demo tool that goes with the repository
+  - 3.2) Run the simulation for the demo tool that goes with the repository
     gazebo -u TASK_NAME.world --verbose
     (-u will make Gazebo start paused)
     (-verbose is nice to show you any problems with finding paths, installation etc.)
-  3.3) Check the ~/.gazebo/gazebo_models/TASK_NAME/TASK_NAME.world file to see parameters and models loaded
+  - 3.3) Check the ~/.gazebo/gazebo_models/TASK_NAME/TASK_NAME.world file to see parameters and models loaded
   
  Good simulating! :) 
  
