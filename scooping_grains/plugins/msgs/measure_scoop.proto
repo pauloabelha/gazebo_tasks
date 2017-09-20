@@ -1,0 +1,8 @@
+package measure_scoop_msgs.msgs;
+
+
+message MeasureScoop
+{
+	required bool scooped = 1;
+	required double cont_bottom_z = 2;
+}

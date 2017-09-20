@@ -1,0 +1,8 @@
+package grain_sensor_msgs.msgs;
+
+
+message GrainCollision
+{
+    required bool collision = 1;
+
+}

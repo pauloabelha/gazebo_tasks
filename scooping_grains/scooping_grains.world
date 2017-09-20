@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+	<world name="scooping_grains">
+	
+	
+	<physics type="ode">
+		<real_time_update_rate>10000</real_time_update_rate>
+	</physics> 
+	
+	<include>
+		<uri>model://sun</uri>
+	</include>
+
+	<include>
+		<uri>model://ground_plane</uri>
+	</include>
+	
+	<include>
+		<uri>model://cafe_table</uri>
+	</include>	
+	
+	<include>
+		<uri>model://box_grains</uri>
+	</include> 
+	
+	<include>
+		<uri>model://tool_scooping_grains</uri>
+	</include> 
+	
+	
+	
+	<plugin name="factory_grain" filename="libfactory_grain.so">
+		<n_grains_x>6</n_grains_x>
+		<n_grains_y>7</n_grains_y>
+		<n_grains_z>5</n_grains_z>
+		<grain_radius>0.0145</grain_radius>
+		<grain_mass>0.0001</grain_mass>
+		<x>0.4</x>
+		<y>0</y>
+		<z>0.78</z>
+		<mu>.1</mu>     
+		<mu2>.1</mu2>
+	</plugin>
+	
+	<plugin name="measurer_cutting_lasagna" filename="libmeasurer_cutting_lasagna.so"/>
+
+  </world>
+</sdf>

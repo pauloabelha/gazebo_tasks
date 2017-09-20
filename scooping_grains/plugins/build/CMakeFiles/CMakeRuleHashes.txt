@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+7f14090a1ca5a9d3f3f9b45d8538a742 msgs/grain_sensor.pb.cc
+54c866e61db629fde7a2efa732dbc569 msgs/measure_scoop.pb.cc

@@ -1,0 +1,168 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+	<model name='box_grains'>
+	<pose>0.4 0 0.775 0 0 0 </pose>
+	<static>true</static>
+
+	<link name='box_grains_0'>
+		<pose>0 0 0.005 0 0 0 </pose>
+		<collision name='box_grains_0_coliision'>
+		<geometry>
+			<box>
+				<size>0.25 0.25 0.01</size>
+			</box>
+		</geometry>
+		<surface>
+			<friction>
+				<ode>
+					<mu>2000</mu>
+					<mu2>2000</mu2>
+				</ode>
+			</friction>
+		</surface>
+		</collision>
+
+		<visual name='box_grains_0_visual'>
+		<geometry>
+			<box>
+				<size>0.25 0.25 0.01</size>
+			</box>
+		</geometry>
+		<material>
+			<script>
+				<uri>file://media/materials/scripts/gazebo.material</uri>
+				<name>Gazebo/WoodFloor</name>
+			</script>
+		</material>
+		</visual>	</link>
+
+	<link name='box_grains_1'>
+		<pose>-0.12 0 0.06 0 0 0 </pose>
+		<collision name='box_grains_1_coliision'>
+		<geometry>
+			<box>
+				<size>0.01 0.23 0.1</size>
+			</box>
+		</geometry>
+		<surface>
+			<friction>
+				<ode>
+					<mu>2000</mu>
+					<mu2>2000</mu2>
+				</ode>
+			</friction>
+		</surface>
+		</collision>
+
+		<visual name='box_grains_1_visual'>
+		<geometry>
+			<box>
+				<size>0.01 0.23 0.1</size>
+			</box>
+		</geometry>
+		<material>
+			<script>
+				<uri>file://media/materials/scripts/gazebo.material</uri>
+				<name>Gazebo/WoodFloor</name>
+			</script>
+		</material>
+		</visual>	</link>
+
+	<link name='box_grains_2'>
+		<pose>0.12 0 0.06 0 0 0 </pose>
+		<collision name='box_grains_2_coliision'>
+		<geometry>
+			<box>
+				<size>0.01 0.23 0.1</size>
+			</box>
+		</geometry>
+		<surface>
+			<friction>
+				<ode>
+					<mu>2000</mu>
+					<mu2>2000</mu2>
+				</ode>
+			</friction>
+		</surface>
+		</collision>
+
+		<visual name='box_grains_2_visual'>
+		<geometry>
+			<box>
+				<size>0.01 0.23 0.1</size>
+			</box>
+		</geometry>
+		<material>
+			<script>
+				<uri>file://media/materials/scripts/gazebo.material</uri>
+				<name>Gazebo/WoodFloor</name>
+			</script>
+		</material>
+		</visual>	</link>
+
+	<link name='box_grains_3'>
+		<pose>0 -0.12 0.06 0 0 0 </pose>
+		<collision name='box_grains_3_coliision'>
+		<geometry>
+			<box>
+				<size>0.25 0.01 0.1</size>
+			</box>
+		</geometry>
+		<surface>
+			<friction>
+				<ode>
+					<mu>2000</mu>
+					<mu2>2000</mu2>
+				</ode>
+			</friction>
+		</surface>
+		</collision>
+
+		<visual name='box_grains_3_visual'>
+		<geometry>
+			<box>
+				<size>0.25 0.01 0.1</size>
+			</box>
+		</geometry>
+		<material>
+			<script>
+				<uri>file://media/materials/scripts/gazebo.material</uri>
+				<name>Gazebo/WoodFloor</name>
+			</script>
+		</material>
+		</visual>	</link>
+
+	<link name='box_grains_4'>
+		<pose>0 0.12 0.06 0 0 0 </pose>
+		<collision name='box_grains_4_coliision'>
+		<geometry>
+			<box>
+				<size>0.25 0.01 0.1</size>
+			</box>
+		</geometry>
+		<surface>
+			<friction>
+				<ode>
+					<mu>2000</mu>
+					<mu2>2000</mu2>
+				</ode>
+			</friction>
+		</surface>
+		</collision>
+
+		<visual name='box_grains_4_visual'>
+		<geometry>
+			<box>
+				<size>0.25 0.01 0.1</size>
+			</box>
+		</geometry>
+		<material>
+			<script>
+				<uri>file://media/materials/scripts/gazebo.material</uri>
+				<name>Gazebo/WoodFloor</name>
+			</script>
+		</material>
+		</visual>	</link>
+
+	</model>
+</sdf>
