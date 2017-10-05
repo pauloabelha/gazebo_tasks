@@ -8,7 +8,7 @@ E-mail: p.abelha@abdn.ac.uk
 If using this repository in your own research, please e-mail me to cite my work (the paper to cite is yet to be published).
 
 This repository is part of my PhD. It contains the code and files for simulating 5 everyday tasks in Gazebo.
-This was only tested on Ubuntu 14.04, but should work in other versions.
+This was only tested on Ubuntu 14.04 and 16.04, but should work in other versions.
 
 I suggest you follow these installation steps for Gazebo in order to run the rest of my code that connects to Gazebo.
 
