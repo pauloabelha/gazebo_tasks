@@ -29,7 +29,8 @@ I suggest you follow these installation steps for Gazebo in order to run the res
   - 1.4) Run Gazebo to check everything is okay:
     - `gazebo`
     (this should open gazebo an empty world)
-  - 1.5) Add the cafe_table model to the gazebo models folder
+  - 1.5) Close Gazebo
+  - 1.6) Add the cafe_table model to the gazebo models folder
     - `cp -r ~/gazebo_tasks/cafe_table ~/.gazebo/gazebo_models/cafe_table`
   
 2) Set up a task (TASK_NAME is the name of the task you want to set up (e.g. scooping_grains))
