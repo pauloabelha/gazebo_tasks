@@ -44,7 +44,7 @@ I suggest you follow these installation steps for Gazebo in order to run the res
     - `source ~/.bashrc`
   - 2.4) For every task you will need to add its model and code path, spearating with ':'
     - `export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:~/.gazebo/gazebo_models/TASK_NAME/plugins/build::~/.gazebo/gazebo_models/TASK_NAME2/plugins/build`
-    - `export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:~/.gazebo/gazebo_models/TASK_NAME:~/.gazebo/gazebo_models/TASK_NAME2`
+    - `export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:~/.gazebo/gazebo_models:~/.gazebo/gazebo_models/TASK_NAME:~/.gazebo/gazebo_models/TASK_NAME2`
   - 2.5) Copy the task folder from this repository for TASK_NAME to the gazebo_models folder
     - `cp -r ~/gazebo_tasks/TASK_NAME ~/.gazebo/gazebo_models/TASK_NAME`
   - 2.6) Remove the build directory inside the task folder
