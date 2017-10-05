@@ -1,5 +1,5 @@
 # gazebo_tasks
-Gazebo simulation of everyday tasks
+Gazebo simulation of 5 everyday tasks for robotics
 
 By Paulo Abelha
 
