@@ -14,7 +14,7 @@ I suggest you follow these installation steps for Gazebo in order to run the res
 
 0) Dependencies for compiling the tasks:
   - 0.0 Update packages:
-    - `sudo apt-get install cmake`
+    - `sudo apt-get update`
   - 0.1 Install cmake:
     - `sudo apt-get install cmake`
   - 0.1 Install libprotobuf:
