@@ -12,6 +12,15 @@ This was only tested on Ubuntu 14.04, but should work in other versions.
 
 I suggest you follow these installation steps for Gazebo in order to run the rest of my code that connects to Gazebo.
 
+0) Dependencies for compiling the tasks:
+  - 0.0 Update packages:
+    - `sudo apt-get install cmake`
+  - 0.1 Install cmake:
+    - `sudo apt-get install cmake`
+  - 0.1 Install libprotobuf:
+    - `sudo apt-get install libprotobuf-dev`
+    - `sudo apt-get install libprotobuf-c-dev`
+
 1) Set up Gazebo
   - 1.1) Follow: http://gazebosim.org/tutorials?tut=install_ubuntu
   - 1.2) Gazebo will create a hidden folder ~/.gazebo in your home
@@ -28,7 +37,8 @@ I suggest you follow these installation steps for Gazebo in order to run the res
     - `gedit ~/.bashrc &`
   - 2.2) Add the following two lines as new lines at the end of bashrc file
     - `export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:~/.gazebo/gazebo_models/TASK_NAME/plugins/build`
-    - `export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:~/.gazebo/gazebo_models/TASK_NAME`
+    - `export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:~/.gazebo/gazebo_models:~/.gazebo/gazebo_models/TASK_NAME`
+    - 2.2.1) Please make sure you add ~/.gazebo/gazebo_models: to the beggining of the model path
   - 2.3) Save and close your file. Now source it
     - `source ~/.bashrc`
   - 2.4) For every task you will need to add its model and code path, spearating with ':'
