@@ -18,6 +18,7 @@ I suggest you follow these installation steps for Gazebo in order to run the res
   - 0.1 Install cmake:
     - `sudo apt-get install cmake`
   - 0.1 Install libprotobuf:
+    - `sudo apt-get install protobuf-compiler`
     - `sudo apt-get install libprotobuf-dev`
     - `sudo apt-get install libprotobuf-c-dev`
 
