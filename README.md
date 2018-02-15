@@ -1,11 +1,19 @@
 # gazebo_tasks
+
+
+If you are using this dataset, please cite: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8206372
+
+@inproceedings{abelha2017learning, \
+    title={Learning How a Tool Affords by Simulating 3D Models from the Web}, \
+    author={Abelha Ferreira, Paulo and Guerin, Frank}, \
+    booktitle={Proceedings of IEEE International Conference on Intelligent Robots and Systems (IROS 2017)}, \
+    year={2017}, \
+    organization={IEEE Press} \
+}
+
 Gazebo simulation of 5 everyday tasks for robotics
 
 By Paulo Abelha
-
-E-mail: p.abelha@abdn.ac.uk
-
-If using this repository in your own research, please e-mail me to cite my work (the paper to cite is yet to be published).
 
 This repository is part of my PhD. It contains the code and files for simulating 5 everyday tasks in Gazebo.
 This was only tested on Ubuntu 14.04 and 16.04, but should work in other versions.
