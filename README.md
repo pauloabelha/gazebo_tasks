@@ -1,5 +1,6 @@
 # gazebo_tasks
 
+A lof ot the work here should be credited to Krasimir Georgiev for his final undergraduate project that I helped to co-supervise.
 
 If you are using this dataset, please cite: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8206372
 
